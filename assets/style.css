@@ -15,6 +15,12 @@ body {
   position: relative;
 }
 
+.container {
+  max-width: 107rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
 nav {
   font-size: 1.7rem;
   width: 100%;
@@ -147,12 +153,6 @@ header nav ul a:hover {
   .hamburger {
     display: none;
   }
-}
-
-.container {
-  max-width: 107rem;
-  margin: 0 auto;
-  padding: 0 4rem;
 }
 
 .hero {
@@ -402,4 +402,75 @@ header nav ul a:hover {
   justify-content: center;
   cursor: pointer;
   font-size: 4.5rem;
+}
+
+.about {
+  background-color: white;
+  padding: 15rem 0;
+}
+
+@media (max-width: 1020px) {
+  .about {
+    padding: 8rem 0;
+  }
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1020px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.text-side {
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 1020px) {
+  .text-side {
+    max-width: 54rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .text-side {
+    padding-right: 0;
+  }
+}
+
+.text-side span {
+  -webkit-text-decoration: underline #147efb;
+          text-decoration: underline #147efb;
+}
+
+.text-side h3 {
+  font-size: 1.7rem;
+  color: #147efb;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.text-side h4 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+  color: #2d2e32;
+}
+
+.text-side p {
+  font-size: 1.7rem;
+  font-family: "Mulish", sans-serif;
+  color: #767676;
+  font-weight: 500;
+  line-height: 1.5;
 }
